@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Madras Chess Club</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <style>
+        .main-container{
+            display: none;
+        }
+
+        .left-sidebar{
+            position: absolute;
+            top: 0%;
+            left: 2%;
+            z-index: 10;
+        }
+
+        .right-sidebar{
+            position: absolute;
+            top: 0%;
+            right: 1%;
+            z-index: 10; 
+        }
+    </style>
+</head>
+<body>
+    <div class="chess">
+        <div class="left-sidebar">
+            <h3>..Welcome..</h3>
+            <h4 class="user_name">{{ username }}</h4>
+        </div>
+        <div id="container"></div>
+        <div class="right-sidebar">
+            <h3>..GameMode..</h3>
+            <h4>Manual</h4>
+            <h5>Without Any Time Limit</h5>
+        </div>
+    </div>
+    {% load static%}
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>

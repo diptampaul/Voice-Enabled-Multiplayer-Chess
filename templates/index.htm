@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body>
+    {% block content %}
+    <div class="main-container">
+        <div class="box">
+            <div class="heading">
+                <h2>Welcome to IIT-Madras Chess Club</h2>
+                <p></p>
+            </div>
+
+
+            <form action="playChess" class="basic-form" method="post">
+                {% csrf_token %}
+                <input type="text" name="FullName" class="Full_Name" placeholder="Full Name"><br>
+                <h4>-- Play With --</h4>
+                <input type="submit" name="WithAssistant" class="With_Assistant" value="Assistant"><br>
+                <input type="submit" name="WithPlayer" class="With_Player" value="Multiplayer">
+            </form>
+
+
+            <div class="bottom">
+                <h4>Tired of Writing? Use our Assistant</h4>
+                <button class="talk">
+                    Talk
+                </button>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    
+    {% load static%}    
+    <script type="text/javascript" src="{% static 'js/script.js' %}" id="chessScript"></script>
+
+    
+</body>
+</html>
