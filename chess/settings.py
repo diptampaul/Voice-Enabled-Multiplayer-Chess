@@ -27,7 +27,7 @@ SECRET_KEY = 'vtbx2tt-mf7hbazkel5*u&mbyd-)v-i0nr^xdx(ip!2vm*msb&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','https://diptam-simple-chess.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1','localhost', 'diptam-simple-chess.herokuapp.com']
 
 
 # Application definition
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     #'livereload.middleware.LiveReloadScript',   #pip install django-livereload-server
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenose.middleware.WhiteNoiseMiddleware'
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
