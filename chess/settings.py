@@ -28,7 +28,8 @@ SECRET_KEY = 'vtbx2tt-mf7hbazkel5*u&mbyd-)v-i0nr^xdx(ip!2vm*msb&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost', 'diptam-simple-chess.herokuapp.com']
+#ALLOWED_HOSTS = ['127.0.0.1','localhost', 'diptam-simple-chess.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
