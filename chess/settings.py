@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-import whitenoise
 import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,8 +27,8 @@ SECRET_KEY = 'vtbx2tt-mf7hbazkel5*u&mbyd-)v-i0nr^xdx(ip!2vm*msb&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = ['127.0.0.1','localhost', 'diptam-simple-chess.herokuapp.com']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1','localhost', 'diptam-chess.herokuapp.com']
+#ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -46,7 +45,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     #'livereload.middleware.LiveReloadScript',   #pip install django-livereload-server
     'django.middleware.security.SecurityMiddleware',
-    'whitenose.middleware.WhiteNoiseMiddleware'
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
