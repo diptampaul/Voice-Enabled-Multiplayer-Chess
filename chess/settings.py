@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'vtbx2tt-mf7hbazkel5*u&mbyd-)v-i0nr^xdx(ip!2vm*msb&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','localhost', 'diptam-chess.herokuapp.com']
 #ALLOWED_HOSTS = ['*']
